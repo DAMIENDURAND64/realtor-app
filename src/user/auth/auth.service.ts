@@ -53,6 +53,7 @@ export class AuthService {
         user_type: userType,
       },
     });
+    console.log(user);
 
     return this.generateJWT(user.name, user.id);
   }
